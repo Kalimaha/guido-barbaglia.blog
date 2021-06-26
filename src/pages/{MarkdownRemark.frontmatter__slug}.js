@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet";
+import { StaticImage } from "gatsby-plugin-image"
 
 export default function Template({
   data,
@@ -15,6 +16,7 @@ export default function Template({
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
       </Helmet>
       <div className="blog-post">
+        <StaticImage src="../images/avatar.jpeg" alt="Guido Barbaglia" width={200} height={200} />
         <h1>{frontmatter.title}</h1>
         <span>{frontmatter.header}</span>
         <div
