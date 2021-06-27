@@ -50,12 +50,6 @@ simple as:
 On the GoDaddy side (_Manage DNS, or something similar_), I had to remove
 the default `A` and `CNAME` records and add the GitHub ones:
 
-| Type  | Name | Value              |
-| ----- | ---- | ------------------ |
-| A     | @    | 192.30.252.153     |
-| A     | @    | 192.30.252.154     |
-| CNAME | www  | kalimaha.github.io |
-
 <table class="table" style="color: #fff;">
   <thead>
     <th>Type</th>
@@ -148,7 +142,6 @@ Googling it:
     </div>
   </code>
 </pre>
-```
 
 <br>
 
@@ -175,42 +168,44 @@ used for different types of contents: articles, recipes, and so forth. Such
 JSON can be anywhere in the page, embedded in a `script` tag. The JSON-LD I am
 using for my articles looks like that:
 
-```
-<script type="application/ld+json">
-  {
-    "@context":"http://schema.org",
-    "@type":"BlogPosting",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "http://guido-barbaglia.blog/posts/how_i_built_my_blog_with_grunt.html"
-    },
-    "headline":"How I built my blog with Grunt",
-    "description":"In the beginning it was WordPress. But then I wanted something more personal, so I ended up building the whole blog from scratch with the help of Grunt.",
-    "author": {
-        "@type": "Person",
-        "name": "Guido Barbaglia"
-    },
-    "datePublished": "2016-12-08T10:42:48.917Z",
-    "dateModified": "2016-12-08T10:42:48.917Z",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Guido Barbaglia",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "http://guido-barbaglia.blog/src/images/portrait.jpg",
-        "width": "150",
-        "height": 60
+<pre>
+  <code>
+    <script type="application/ld+json">
+      {
+        "@context":"http://schema.org",
+        "@type":"BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "http://guido-barbaglia.blog/posts/how_i_built_my_blog_with_grunt.html"
+        },
+        "headline":"How I built my blog with Grunt",
+        "description":"In the beginning it was WordPress. But then I wanted something more personal, so I ended up building the whole blog from scratch with the help of Grunt.",
+        "author": {
+            "@type": "Person",
+            "name": "Guido Barbaglia"
+        },
+        "datePublished": "2016-12-08T10:42:48.917Z",
+        "dateModified": "2016-12-08T10:42:48.917Z",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Guido Barbaglia",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "http://guido-barbaglia.blog/src/images/portrait.jpg",
+            "width": "150",
+            "height": 60
+          }
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "http://guido-barbaglia.blog/src/images/how_i_built_my_blog_with_grunt.png",
+          "height": 150,
+          "width": "150"
+        }
       }
-    },
-    "image": {
-      "@type": "ImageObject",
-      "url": "http://guido-barbaglia.blog/src/images/how_i_built_my_blog_with_grunt.png",
-      "height": 150,
-      "width": "150"
-    }
-  }
-</script>
-```
+    </script>
+  </code>
+</pre>
 
 ## Putting all together with Grunt
 
@@ -226,17 +221,19 @@ markdown files and produce nice HTML files that are immediately available for
 the readers (_and Google!_). The Grunt task I use is dead simple. The first
 step harvests a given directory to fetch all the content (_markdown_) files:
 
-```
-const get_filenames = (grunt) => {
-  var filenames = [];
+<pre>
+  <code>
+    const get_filenames = (grunt) => {
+      var filenames = [];
 
-  grunt.file.recurse('./src/contents', function(a, b, c, filename) {
-    filenames.push(filename)
-  });
+      grunt.file.recurse('./src/contents', function(a, b, c, filename) {
+        filenames.push(filename)
+      });
 
-  return filenames
-};
-```
+      return filenames
+    };
+  </code>
+</pre>
 
 <br>
 
@@ -253,9 +250,11 @@ Then, for each file, Grunt:
 So basically, all I have to do is to write my posts using the markdown syntax
 and then run one single command:
 
-```
-grunt
-```
+<pre>
+  <code>
+    grunt
+  </code>
+</pre>
 
 <br>
 
