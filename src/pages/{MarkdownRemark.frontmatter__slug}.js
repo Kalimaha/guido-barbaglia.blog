@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet";
-// import { StaticImage } from "gatsby-plugin-image"
 
 export default function Template({
   data,
@@ -29,7 +28,7 @@ export default function Template({
         &nbsp;
       </div>
       <div className="row">
-        <div className="col-lg-4">
+        {/* <div className="col-lg-4">
           <img
             src={`${frontmatter.image}`}
             className="img-fluid rounded-circle text-center"
@@ -38,9 +37,9 @@ export default function Template({
         </div>
         <div className="col-lg-8">
           <p style={{fontSize: "22px", fontWeight: 100}} className="text-justify">
-            {frontmatter.header}
+            {frontmatter.description}
             </p>
-        </div>
+        </div> */}
       </div>
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </div>
@@ -51,9 +50,10 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
+        date(formatString: "MMMM DD, YYYY")
         slug
         title
-        header
+        description
         image
       }
     }
