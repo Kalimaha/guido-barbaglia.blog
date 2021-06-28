@@ -1,6 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: "Guido Barbaglia",
+    title: "Blog",
+    titleTemplate: "%s | Guido Barbaglia",
+    description: "Guido Barbaglia's personal blog.",
+    url: "https://guido-barbaglia.blog",
+    image: "/guido-barbaglia.png",
+    twitterUsername: "@Kalimaha",
   },
   plugins: [
     {
@@ -33,8 +38,8 @@ module.exports = {
         lang: "en",
         icon: "src/images/guido-barbaglia.png",
         start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#000`,
+        background_color: `#171717`,
+        theme_color: `#171717`,
         display: `standalone`,
       },
     },

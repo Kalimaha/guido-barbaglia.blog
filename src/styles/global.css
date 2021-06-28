@@ -1,9 +1,39 @@
-/* html { */
-/* color: white; */
-/* background-color: black; */
-/* } */
+html {
+  background-color: #171717;
+}
 
-/* #___gatsby { */
-/* color: white; */
-/* background-color: black; */
-/* } */
+#___gatsby {
+  color: #fff;
+  background-color: #171717;
+}
+
+.card-title {
+  color: #4b5161;
+  margin-bottom: 3rem;
+}
+
+.card-body {
+  color: #4b5161;
+  background-color: #80d2f2;
+}
+
+.card-body a {
+  color: #4b5161;
+}
+
+table {
+  color: #828dab;
+  background-color: #fdf5eb;
+}
+
+table a {
+  color: #4b5161;
+}
+
+h1 {
+  color: #fdf5eb;
+}
+
+#___gatsby h2 {
+  color: #fdf5eb;
+}
