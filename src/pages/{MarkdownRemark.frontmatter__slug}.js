@@ -1,12 +1,15 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet";
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
+
+deckDeckGoHighlightElement();
 
 export default function Template({
   data,
 }) {
   const { markdownRemark } = data;
-  const { frontmatter, html } = markdownRemark;
+  const { html } = markdownRemark;
   return (
     <div
       className="container"
@@ -27,21 +30,7 @@ export default function Template({
       <div style={{ minHeight: "1.5rem", height: "1.5rem" }}>
         &nbsp;
       </div>
-      <div className="row">
-        {/* <div className="col-lg-4">
-          <img
-            src={`${frontmatter.image}`}
-            className="img-fluid rounded-circle text-center"
-            alt={frontmatter.title}
-          />
-        </div>
-        <div className="col-lg-8">
-          <p style={{fontSize: "22px", fontWeight: 100}} className="text-justify">
-            {frontmatter.description}
-            </p>
-        </div> */}
-      </div>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
     </div>
   )
 }
@@ -49,13 +38,6 @@ export const pageQuery = graphql`
   query($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        slug
-        title
-        description
-        image
-      }
     }
   }
 `

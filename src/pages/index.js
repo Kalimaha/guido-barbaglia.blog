@@ -1,6 +1,10 @@
 import * as React from "react"
 import { Helmet } from "react-helmet";
 import { Link, graphql } from "gatsby";
+import { Card } from "react-bootstrap";
+// import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
+
+// deckDeckGoHighlightElement();
 
 const IndexPage = ({ data }) => {
   // console.log(data.allMarkdownRemark.nodes)
@@ -31,21 +35,21 @@ const IndexPage = ({ data }) => {
 };
 
 const node2link = (node) => (
-  <div key={node.frontmatter.slug} className="card" style={{marginBottom: "1.5rem", color: "#000"}}>
-    <div className="card-body">
-      <h5 className="card-title">
+  <Card style={{ marginBottom: "1.5rem" }}>
+    <Card.Body>
+      <Card.Title className="card-title">
         {node.frontmatter.title}
-      </h5>
-      <p className="card-text">
+      </Card.Title>
+      <Card.Text>
         {node.frontmatter.description}
-      </p>
+      </Card.Text>
       <div className="text-center">
         <Link to={node.frontmatter.slug}>
-          Go to the post
+          Read full post
         </Link>
       </div>
-    </div>
-  </div>
+    </Card.Body>
+  </Card>
 );
 
 export const pageQuery = graphql`
