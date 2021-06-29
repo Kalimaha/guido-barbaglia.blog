@@ -14,7 +14,7 @@ export default function Template({
   return (
     <div
       className="container"
-      style={{ fontFamily: "Roboto", maxWidth: "860px" }}
+      style={{ fontFamily: "Roboto", backgroundColor: "#171717" }}
     >
       <Commons />
       <Seo title={data.markdownRemark.frontmatter.title} />

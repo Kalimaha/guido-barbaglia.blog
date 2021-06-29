@@ -5,6 +5,7 @@ html {
 #___gatsby {
   color: #fff;
   background-color: #171717;
+  background-image: url("../images/clouds.jpeg");
 }
 
 .card-title {
@@ -13,11 +14,21 @@ html {
 }
 
 .card-body {
-  color: #4b5161;
-  background-color: #80d2f2;
+  color: #5a6175;
+  background-color: #faca78;
+}
+
+.card-footer {
+  color: #5a6175;
+  border-color: #faca78 !important;
+  background-color: #faca78 !important;
 }
 
 .card-body a {
+  color: #4b5161;
+}
+
+.card-footer a {
   color: #4b5161;
 }
 
