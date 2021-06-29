@@ -3,7 +3,7 @@ slug: "/about"
 date: "2100-12-31"
 title: "About me"
 description: "Senior software engineer, expert in the analysis, design and development of open source web-based information systems. Strong experience in Web 2.0 technologies for the management, manipulation and dissemination of statistical data and micro-data. Excellent problem solving skills, enjoy working as a team member as well as independently."
-image: "guido-barbaglia.png"
+image: "guido-barbaglia.webp"
 ---
 
 ## Work experience

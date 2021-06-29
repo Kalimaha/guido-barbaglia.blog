@@ -3,7 +3,7 @@ slug: "/grunt"
 date: "2016-12-08"
 title: "How I built my blog with Grunt"
 description: "In the beginning it was WordPress. But then I wanted something more personal, so I ended up building the whole blog from scratch with the help of Grunt."
-image: "grunt.png"
+image: "grunt.webp"
 ---
 
 # How I built my blog with Grunt
