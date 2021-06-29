@@ -1,13 +1,13 @@
 import React from "react"
 import Seo from "../components/seo";
 
-import { Card, Row, Col } from "react-bootstrap";
+import { Card, Row, Col, Image } from "react-bootstrap";
 import { Link, graphql } from "gatsby";
 import { Commons } from "../components/commons";
-import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = ({ data }) => {
   const links = data.allMarkdownRemark.nodes.map(node2link);
+
   return (
     <main className="container" style={{ fontFamily: "Roboto" }}>
       <Commons />
@@ -22,27 +22,29 @@ const IndexPage = ({ data }) => {
   );
 };
 
-const node2link = (node) => (
-  <Col xs={12} md={3}>
-    <Card style={{ marginBottom: "1.5rem", minHeight: "200px" }} key={node.frontmatter.slug}>
-      {/* <Card.Img variant="top" src="guido-barbaglia.png" /> */}
-      <StaticImage src="../images/guido-barbaglia.png" alt="A dinosaur" />
-      <Card.Body>
-        <Card.Title className="card-title text-center">
-          {node.frontmatter.title}
-        </Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
-          {node.frontmatter.description}
-        </Card.Text>
-        <div className="text-center">
-          <Link to={node.frontmatter.slug}>
-            read full post
-          </Link>
-        </div>
-      </Card.Body>
-    </Card>
-  </Col>
-);
+const node2link = (node) => {
+  console.log("==> image", node.frontmatter.image)
+  return (
+    <Col xs={12} md={3} style={{ marginBottom: "1.5rem" }}>
+      <Card style={{ marginBottom: "1.5rem" }} className="h-100" key={node.frontmatter.slug}>
+        <Image src={`${node.frontmatter.image}`} />
+        <Card.Body>
+          <Card.Title className="card-title text-center">
+            {node.frontmatter.title}
+          </Card.Title>
+          <Card.Text style={{ textAlign: "justify" }}>
+            {node.frontmatter.description}
+          </Card.Text>
+          <div className="text-center">
+            <Link to={node.frontmatter.slug}>
+              read full post
+            </Link>
+          </div>
+        </Card.Body>
+      </Card>
+    </Col>
+  )
+};
 
 export const pageQuery = graphql`
   query {
@@ -57,6 +59,7 @@ export const pageQuery = graphql`
           slug
           title
           description
+          image
         }
       }
     }

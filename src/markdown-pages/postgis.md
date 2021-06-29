@@ -1,6 +1,7 @@
 ---
 slug: "/postgis"
-date: "2016-12-08"
+date: "2018-03-23"
 title: "Find listings in surrounding suburbs with PostGIS"
-description: "TODO"
+description: "Add geospatial capabilities to your queries with PostGIS"
+image: "postgis.png"
 ---

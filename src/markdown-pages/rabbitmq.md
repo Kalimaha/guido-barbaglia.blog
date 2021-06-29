@@ -1,6 +1,7 @@
 ---
 slug: "/rabbitmq"
-date: "2016-12-08"
+date: "2017-04-08"
 title: "Microservices coreography with event streams"
-description: "TODO"
+description: "Reduce the coupling between microservices through the use of event streams"
+image: "rabbitmq.png"
 ---

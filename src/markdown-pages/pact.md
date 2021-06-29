@@ -1,6 +1,7 @@
 ---
 slug: "/pact"
-date: "2016-12-08"
+date: "2018-03-06"
 title: "Consumer-driven contract testing with Pact and Python"
-description: "TODO"
+description: "Deploy your Python microservices with confidence with consumer-driven contract testing."
+image: "pact.png"
 ---
