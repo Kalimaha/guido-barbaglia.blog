@@ -25,7 +25,7 @@ export default function Template({
       <Row>
         <hr/>
         <div className="text-center" style={{ marginBottom: "1rem" }}>
-          <Link to="/">Go home</Link>.
+          <Link to="/">Go home</Link>
         </div>
         <hr/>
       </Row>
@@ -40,7 +40,7 @@ export const pageQuery = graphql`
         title
         image
         description
-        date
+        date(formatString: "MMMM DD, YYYY")
       }
     }
   }

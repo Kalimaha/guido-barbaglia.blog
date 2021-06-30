@@ -33,12 +33,8 @@ div.card-footer > div > a {
 }
 
 table {
-  color: #828dab;
-  background-color: #fdf5eb;
-}
-
-table a {
-  color: #4b5161;
+  color: #fdf5eb !important;
+  background-color: #171717;
 }
 
 h1 {
