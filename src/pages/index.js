@@ -3,10 +3,14 @@ import Seo from "../components/seo";
 
 import { Link, graphql } from "gatsby";
 import { Commons } from "../components/commons";
-import { Card, Row, Col, Image } from "react-bootstrap";
+import { Card, Row, Col } from "react-bootstrap";
+import { GatsbyImage } from "gatsby-plugin-image"
+
+const findImage = (imageNodes, imageName) => imageNodes.find(x => x.original.src.includes(imageName.replace(".webp", "")));
 
 const IndexPage = ({ data }) => {
-  const links = data.allMarkdownRemark.nodes.map(node2link);
+  const imageNodes = data.allImageSharp.nodes;
+  const links = data.allMarkdownRemark.nodes.map((node) => node2link(node, findImage(imageNodes, node.frontmatter.image)));
 
   return (
     <main className="container" style={{ fontFamily: "Roboto" }}>
@@ -15,6 +19,7 @@ const IndexPage = ({ data }) => {
       <div style={{ minHeight: "1.5rem", height: "1.5rem" }}>
         &nbsp;
       </div>
+      {/* <GatsbyImage image={tmpImage.gatsbyImageData} /> */}
       <Row>
         {links}
       </Row>
@@ -22,10 +27,11 @@ const IndexPage = ({ data }) => {
   );
 };
 
-const node2link = (node) => (
+const node2link = (node, image) => (
   <Col xs={12} md={3} style={{ marginBottom: "1.5rem" }}>
     <Card style={{ marginBottom: "1.5rem" }} className="h-100" key={node.frontmatter.slug}>
-      <Image src={`${node.frontmatter.image}`} style={{ width: "304px", height: "304px" }} />
+      {/* <Image src={`${node.frontmatter.image}`} /> */}
+      <GatsbyImage image={image.gatsbyImageData} alt={node.frontmatter.title} />
       <Card.Body>
         <Card.Title className="card-title text-center">
           {node.frontmatter.title}
@@ -59,6 +65,14 @@ export const pageQuery = graphql`
           title
           description
           image
+        }
+      }
+    }
+    allImageSharp {
+      nodes {
+        gatsbyImageData(width: 350, formats: NO_CHANGE, placeholder: DOMINANT_COLOR)
+        original {
+          src
         }
       }
     }
