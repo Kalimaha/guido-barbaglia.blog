@@ -19,7 +19,6 @@ const IndexPage = ({ data }) => {
       <div style={{ minHeight: "1.5rem", height: "1.5rem" }}>
         &nbsp;
       </div>
-      {/* <GatsbyImage image={tmpImage.gatsbyImageData} /> */}
       <Row>
         {links}
       </Row>
@@ -30,8 +29,7 @@ const IndexPage = ({ data }) => {
 const node2link = (node, image) => (
   <Col xs={12} md={3} style={{ marginBottom: "1.5rem" }}>
     <Card style={{ marginBottom: "1.5rem" }} className="h-100" key={node.frontmatter.slug}>
-      {/* <Image src={`${node.frontmatter.image}`} /> */}
-      <GatsbyImage image={image.gatsbyImageData} alt={node.frontmatter.title} />
+      <GatsbyImage image={image && image.gatsbyImageData} alt={node.frontmatter.title} />
       <Card.Body>
         <Card.Title className="card-title text-center">
           {node.frontmatter.title}
