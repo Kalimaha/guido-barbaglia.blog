@@ -129,8 +129,7 @@ be saved like this:
 
 ``bash
 HMSET tweet:1982 user "42" time "1460935326" body "Hello, World!"
-
-````
+```
 
 For login purposes, it is also required to keep track of the mapping between
 the username and its internal ID. The set named users will hold such
@@ -138,7 +137,7 @@ relationship:
 
 ```bash
 HSET users "kalimaha" "42"
-````
+```
 
 The login process can be charted as follows:
 
