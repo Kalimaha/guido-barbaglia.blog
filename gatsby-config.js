@@ -4,7 +4,7 @@ module.exports = {
     titleTemplate: "%s | Guido Barbaglia",
     description: "Guido Barbaglia's personal blog.",
     url: "https://guido-barbaglia.blog",
-    image: "/guido-barbaglia.png",
+    image: "src/images/guido-barbaglia.png",
     twitterUsername: "@Kalimaha",
   },
   plugins: [

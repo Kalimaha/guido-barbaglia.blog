@@ -1,5 +1,5 @@
 ---
-slug: "/compose"
+slug: "/gatsby"
 date: "2021-07-01"
 title: "How I re-built my blog with Gatsby"
 description: "This all started with a custom-made blog built with Grunt. So much

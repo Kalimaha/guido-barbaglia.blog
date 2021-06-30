@@ -27,8 +27,8 @@ const IndexPage = ({ data }) => {
 };
 
 const node2link = (node, image) => (
-  <Col xs={12} md={3} style={{ marginBottom: "1.5rem" }}>
-    <Card style={{ marginBottom: "1.5rem" }} className="h-100" key={node.frontmatter.slug}>
+  <Col xs={12} md={3} style={{ marginBottom: "1.5rem" }} key={node.frontmatter.slug}>
+    <Card style={{ marginBottom: "1.5rem" }} className="h-100">
       <GatsbyImage image={image && image.gatsbyImageData} alt={node.frontmatter.title} />
       <Card.Body>
         <Card.Title className="card-title text-center">

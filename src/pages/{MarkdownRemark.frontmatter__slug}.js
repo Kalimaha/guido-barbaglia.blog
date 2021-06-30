@@ -16,7 +16,7 @@ export default function Template({
       className="container"
       style={{ fontFamily: "Roboto", backgroundColor: "#171717" }}
     >
-      <Commons />
+      <Commons data={data} />
       <Seo title={data.markdownRemark.frontmatter.title} />
       <div style={{ minHeight: "1.5rem", height: "1.5rem" }}>
         &nbsp;
@@ -38,6 +38,9 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        image
+        description
+        date
       }
     }
   }
