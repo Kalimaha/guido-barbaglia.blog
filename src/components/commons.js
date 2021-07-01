@@ -56,5 +56,9 @@ export const Commons = (data) => (
         {JSON.stringify(ldJSON(data.data))}
       </script>
     ) : (<script></script>)}
+
+    <script>
+      window.__REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function () {}
+    </script>
   </Helmet>
 );
