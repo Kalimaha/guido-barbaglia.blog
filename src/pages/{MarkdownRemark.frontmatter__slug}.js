@@ -1,7 +1,7 @@
 import React from "react"
 import Seo from "../components/seo";
+import Row from "react-bootstrap/Row";
 
-import { Row } from "react-bootstrap";
 import { graphql, Link } from "gatsby"
 import { Commons } from "../components/commons";
 import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
