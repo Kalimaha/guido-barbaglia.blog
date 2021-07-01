@@ -49,6 +49,21 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-preact`,
     {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://guido-barbaglia.blog',
+        sitemap: 'https://guido-barbaglia.blog/sitemap.xml',
+        env: {
+          development: {
+            policy: [{ userAgent: '*', disallow: ['/'] }]
+          },
+          production: {
+            policy: [{ userAgent: '*', allow: '/' }]
+          }
+        }
+      }
+    },
+    {
       resolve: `gatsby-plugin-advanced-sitemap`,
       options: {
         output: "/sitemap.xml",
