@@ -19,6 +19,7 @@
     "bootstrap": "^5.0.2",
     "gatsby": "^3.6.2",
     "gatsby-plugin-gatsby-cloud": "^2.8.1",
+    "gatsby-plugin-google-gtag": "^3.8.0",
     "gatsby-plugin-image": "^1.8.0",
     "gatsby-plugin-manifest": "^3.8.0",
     "gatsby-plugin-netlify": "^3.8.0",
