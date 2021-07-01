@@ -4,6 +4,7 @@ module.exports = {
     titleTemplate: "%s | Guido Barbaglia",
     description: "Guido Barbaglia's personal blog.",
     url: "https://guido-barbaglia.blog",
+    siteUrl: "https://guido-barbaglia.blog",
     image: "src/images/guido-barbaglia.png",
     twitterUsername: "@Kalimaha",
   },
@@ -47,6 +48,12 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-preact`,
+    {
+      resolve: `gatsby-plugin-advanced-sitemap`,
+      options: {
+        output: "/sitemap.xml",
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
