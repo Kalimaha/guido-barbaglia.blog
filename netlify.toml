@@ -1,0 +1,23 @@
+[[plugins]]
+  package = "netlify-plugin-gatsby-cache"
+
+[[plugins]]
+  package = "netlify-plugin-subfont"
+
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
+
+	[plugins.inputs]
+
+	# The base url of your site (optional, default = main URL set in Netlify)
+	baseUrl = "https://guido-barbaglia.blog"
+
+	# Path to the sitemap URL (optional, default = /sitemap.xml)
+	sitemapPath = "/sitemap.xml"
+
+	# Enabled providers to submit sitemap to (optional, default = 'google', 'bing', 'yandex'). Possible providers are currently only 'google', 'bing', 'yandex'.
+	providers = [
+		"google",
+		"bing",
+		"yandex"
+	]
