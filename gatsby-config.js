@@ -48,6 +48,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-preact`,
+    `gatsby-plugin-fontawesome-css`,
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {

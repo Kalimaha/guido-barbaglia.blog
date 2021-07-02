@@ -69,3 +69,8 @@ a:hover {
 a:active {
   color: #47a8f6;
 }
+
+.svg-inline--fa {
+  color: #47a8f6;
+  cursor: pointer;
+}

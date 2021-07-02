@@ -1,8 +1,8 @@
 import React from "react"
 import Seo from "../components/seo";
-import Row from "react-bootstrap/Row";
 
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
+import { Footer } from "../components/footer";
 import { Commons } from "../components/commons";
 import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
 
@@ -22,13 +22,7 @@ export default function Template({
         &nbsp;
       </div>
       <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-      <Row>
-        <hr/>
-        <div className="text-center" style={{ marginBottom: "1rem" }}>
-          <Link to="/">Go back to the home page</Link>
-        </div>
-        <hr/>
-      </Row>
+      <Footer />
     </div>
   )
 }
