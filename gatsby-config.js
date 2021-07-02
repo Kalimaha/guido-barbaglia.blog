@@ -5,7 +5,7 @@ module.exports = {
     description: "Guido Barbaglia's personal blog.",
     url: "https://guido-barbaglia.blog",
     siteUrl: "https://guido-barbaglia.blog",
-    image: "src/images/guido-barbaglia.png",
+    image: "src/images/guido-barbaglia.webp",
     twitterUsername: "@Kalimaha",
   },
   plugins: [
@@ -37,7 +37,7 @@ module.exports = {
         short_name: `Guido Barbaglia`,
         description: "Guido Barbaglia's personal blog.",
         lang: "en",
-        icon: "src/images/guido-barbaglia.png",
+        icon: "src/images/guido-barbaglia.webp",
         start_url: `/`,
         background_color: `#171717`,
         theme_color: `#171717`,

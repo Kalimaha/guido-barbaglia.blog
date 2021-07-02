@@ -30,25 +30,30 @@ const IndexPage = ({ data }) => {
 
 const node2link = (node, image) => (
   <Col xs={12} md={3} style={{ marginBottom: "1.5rem" }} key={node.frontmatter.slug}>
-    <Card style={{ marginBottom: "1.5rem" }} className="h-100">
-      <GatsbyImage image={image && image.gatsbyImageData} alt={node.frontmatter.title} />
-      <Card.Body>
-        <Card.Title className="card-title text-center">
-          {node.frontmatter.title}
-        </Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
-          {node.frontmatter.description}
-        </Card.Text>
-      </Card.Body>
-      <Card.Footer>
-        <div className="text-center">
-          <Link to={node.frontmatter.slug}>
-            read full post
-          </Link>
-        </div>
-      </Card.Footer>
-    </Card>
-  </Col>
+      <Link to={node.frontmatter.slug}>
+      <Card style={{ marginBottom: "1.5rem" }} className="h-100">
+        <GatsbyImage
+          image={image && image.gatsbyImageData}
+          alt={node.frontmatter.title}
+        />
+        <Card.Body>
+          <Card.Title className="card-title text-center">
+            {node.frontmatter.title}
+          </Card.Title>
+          <Card.Text style={{ textAlign: "justify" }}>
+            {node.frontmatter.description}
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer>
+          <div className="text-center">
+            <Link to={node.frontmatter.slug}>
+              read full post
+            </Link>
+          </div>
+        </Card.Footer>
+      </Card>
+  </Link>
+    </Col>
 );
 
 export const pageQuery = graphql`

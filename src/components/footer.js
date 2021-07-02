@@ -12,16 +12,16 @@ export const Footer = () => (
     <hr />
       <div style={{ marginBottom: "1.5rem", justifyContent: "center", alignItems: "center", display: "flex" }}>
         <Link to="/">
-          <FontAwesomeIcon icon={faHome} size="lg" title="Homepage"/>
+          <FontAwesomeIcon icon={faHome} size="2x" title="Homepage"/>
         </Link>
         <HzSpacer />
-        <FontAwesomeIcon icon={faTwitter} size="lg" title="Share on Twitter"/>
+        <FontAwesomeIcon icon={faTwitter} size="2x" title="Share on Twitter"/>
         <HzSpacer />
-        <FontAwesomeIcon icon={faLinkedin} size="lg" title="Share on LinkedIn"/>
+        <FontAwesomeIcon icon={faLinkedin} size="2x" title="Share on LinkedIn"/>
         <HzSpacer />
-        <FontAwesomeIcon icon={faReddit} size="lg" title="Share on Reddit"/>
+        <FontAwesomeIcon icon={faReddit} size="2x" title="Share on Reddit"/>
         <HzSpacer />
-        <FontAwesomeIcon icon={faFacebook} size="lg" title="Share on Facebook"/>
+        <FontAwesomeIcon icon={faFacebook} size="2x" title="Share on Facebook"/>
       </div>
     <hr/>
   </Row>

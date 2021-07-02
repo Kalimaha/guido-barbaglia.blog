@@ -184,7 +184,7 @@ using for my articles looks like that:
     },
     "image": {
       "@type": "ImageObject",
-      "url": "http://guido-barbaglia.blog/src/images/how_i_built_my_blog_with_grunt.png",
+      "url": "http://guido-barbaglia.blog/src/images/how_i_built_my_blog_with_grunt.webp",
       "height": 150,
       "width": "150"
     }
