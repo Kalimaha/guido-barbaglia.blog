@@ -64,12 +64,12 @@ module.exports = {
         }
       }
     },
-    {
-      resolve: `gatsby-plugin-google-adsense`,
-      options: {
-        publisherId: `ca-pub-3293377835042944`
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-adsense`,
+    //   options: {
+    //     publisherId: `ca-pub-3293377835042944`
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-advanced-sitemap`,
       options: {
