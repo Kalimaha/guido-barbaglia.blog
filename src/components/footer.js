@@ -10,7 +10,7 @@ export const Footer = ({ title, slug }) => {
   const encodedTitle = encodeURI(title);
   const encodedUrl = encodeURI(`https://guido-barbaglia.blog${slug}`);
   const twitterURL = `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`
-  const linkedinURL = `href="http://www.linkedin.com/shareArticle?mini=true&title=${encodedTitle}&url=${encodedUrl}`
+  const linkedinURL = `http://www.linkedin.com/shareArticle?mini=true&title=${encodedTitle}&url=${encodedUrl}`
   const redditURL = `http://www.reddit.com/submit?title=${encodedTitle}&url=${encodedUrl}`
   const facebookURL = `http://www.facebook.com/sharer/sharer.php?title=${encodedTitle}&u=${encodedUrl}`
 
