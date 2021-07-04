@@ -1,10 +1,10 @@
 import React from "react"
-import Seo from "../components/Seo";
+import Seo from "../components/seo";
 
 import { graphql } from "gatsby"
 import { findImage } from "../helpers";
-import { Footer } from "../components/Footer";
-import { Commons } from "../components/Commons";
+import { Footer } from "../components/footer";
+import { Commons } from "../components/commons";
 import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
 
 deckDeckGoHighlightElement();

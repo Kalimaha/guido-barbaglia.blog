@@ -1,5 +1,5 @@
 import React from "react"
-import Seo from "../components/Seo";
+import Seo from "../components/seo";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
