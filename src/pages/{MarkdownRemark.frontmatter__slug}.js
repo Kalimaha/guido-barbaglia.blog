@@ -30,7 +30,10 @@ export default function Template({
         &nbsp;
       </div>
       <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-      <Footer title={data.markdownRemark.frontmatter.title}/>
+      <Footer
+        title={data.markdownRemark.frontmatter.title}
+        slug={data.markdownRemark.frontmatter.slug}
+      />
     </div>
   )
 }
@@ -41,6 +44,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        slug
         image
         description
         date(formatString: "MMMM DD, YYYY")

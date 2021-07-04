@@ -7,10 +7,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { faTwitter, faLinkedin, faReddit, faFacebook } from "@fortawesome/free-brands-svg-icons";
 
-export const Footer = ({ title, url }) => {
+export const Footer = ({ title, slug }) => {
   console.log("title", title)
   const encodedTitle = encodeURI(title);
-  const twitterURL = `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${"https://guido-barbaglia.blog/flatmates"}`
+  const encodedUrl = encodeURI(`https://guido-barbaglia.blog${slug}`);
+  const twitterURL = `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`
+  console.log(twitterURL)
 
   return (
     <Row>
