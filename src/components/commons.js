@@ -38,7 +38,7 @@ const ldJSON = (data) => ({
 export const Commons = (data) => (
   <Helmet htmlAttributes={{ lang: 'en' }}>
     <title>Blog | Guido Barbaglia</title>
-
+    <meta name="follow_it-verification-code" content="gmzwp7SrjBGHgmsZSf2d"/>
     <meta charset="utf-8" />
     <meta name="description" content="Guido Barbaglia's personal blog."></meta>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"></meta>
