@@ -2,7 +2,7 @@ import React from "react"
 import Row from "react-bootstrap/Row";
 
 import { Link } from "gatsby";
-import { HzSpacer } from "../components/hz-spacer";
+import { HzSpacer } from "../components/HzSpacer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { faTwitter, faLinkedin, faReddit, faFacebook } from "@fortawesome/free-brands-svg-icons";

@@ -1,14 +1,13 @@
 import React from "react"
-import Seo from "../components/seo";
+import Seo from "../components/Seo";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 
 import { Link, graphql } from "gatsby";
+import { findImage } from "../helpers";
 import { Commons } from "../components/commons";
 import { GatsbyImage } from "gatsby-plugin-image"
-
-const findImage = (imageNodes, imageName) => imageNodes.find(x => x.original.src.includes(imageName.replace(".webp", "")));
 
 const IndexPage = ({ data }) => {
   const imageNodes = data.allImageSharp.nodes;
