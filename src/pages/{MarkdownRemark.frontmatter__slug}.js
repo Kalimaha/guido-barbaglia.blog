@@ -30,7 +30,7 @@ export default function Template({
         &nbsp;
       </div>
       <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-      <Footer />
+      <Footer title={data.markdownRemark.frontmatter.title}/>
     </div>
   )
 }
