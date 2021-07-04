@@ -24,7 +24,7 @@ export default function Template({
       <Seo
         title={data.markdownRemark.frontmatter.title}
         description={data.markdownRemark.frontmatter.description}
-        image={`/${image.original.src}`}
+        image={image.original.src}
       />
       <div style={{ minHeight: "1.5rem", height: "1.5rem" }}>
         &nbsp;
