@@ -16,7 +16,11 @@ const IndexPage = ({ data }) => {
   return (
     <main className="container" style={{ fontFamily: "Roboto" }}>
       <Commons />
-      <Seo />
+      <Seo
+        title="Guido Barbaglia"
+        description="Guido Barbaglia's personal blog."
+        image="guido-barbaglia.webp"
+      />
       <div style={{ minHeight: "1.5rem", height: "1.5rem" }}>
         &nbsp;
       </div>
