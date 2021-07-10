@@ -142,14 +142,14 @@ module.exports = {
         precachePages: [`/`],
       },
     },
-    {
-      resolve: `gatsby-plugin-gatsby-cloud`,
-      options: {
-        allPageHeaders: [
-          "cache-control: public, max-age=31536000, immutable"
-        ]
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-gatsby-cloud`,
+    //   options: {
+    //     allPageHeaders: [
+    //       "cache-control: public, max-age=31536000, immutable"
+    //     ]
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-netlify`,
       options: {

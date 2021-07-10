@@ -127,7 +127,7 @@ HMSET user:42 username "kalimaha" password "12345678"
 Similarly, a tweet posted by the previous user having `tweet_id` "_1982_" will
 be saved like this:
 
-``bash
+```bash
 HMSET tweet:1982 user "42" time "1460935326" body "Hello, World!"
 ```
 
