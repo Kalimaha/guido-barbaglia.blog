@@ -46,3 +46,9 @@
       { width = 414, height = 896 },
       { width = 1920, height = 1080 }
     ]
+
+[[redirects]]
+  from = "/posts/simple_client-server_architecture_with_docker_compose.html"
+  to = "/compose"
+  status = 301
+  force = false
