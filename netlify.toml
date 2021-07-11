@@ -52,3 +52,69 @@
   to = "/compose"
   status = 301
   force = false
+
+[[redirects]]
+  from = "/posts/use_docker_to_run_flask_based_rest_services.html"
+  to = "/docker"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/posts/consumer_driven_contract_testing_with_pact_and_python.html"
+  to = "/pact"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "	/posts/diy_twitter_with_redis_and_ruby_on_rails.html"
+  to = "/r3twitter"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/posts/docker_compose_and_the_schrodinger_cat.html"
+  to = "/schrodinger"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/posts/how_i_built_my_blog_with_grunt.html"
+  to = "/grunt"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/posts/browse_nyt_best_sellers_with_angularjs.html"
+  to = "/angularjs"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/posts/microservices_coreography_with_event_streams.html"
+  to = "/rabbitmq"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/posts/my_two_cents_about_elm.html"
+  to = "/elm"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/posts/setup_a_project_for_continuous_development_with_ruby_on_rails.html"
+  to = "/ror"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/posts/find_listings_in_surrounding_suburbs_with_postgis.html"
+  to = "/postgis"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/posts/create_a_serverless_full-stack_web-app_with_a_single_file.html"
+  to = "/serverless"
+  status = 301
+  force = false
