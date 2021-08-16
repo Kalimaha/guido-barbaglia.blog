@@ -10,27 +10,27 @@ html {
 }
 
 .card-title {
-  color: #4b5161;
+  color: #62ffb1;
   margin-bottom: 3rem;
 }
 
 .card-body {
-  color: #4f597e;
-  background-color: #faca78;
+  color: #62ffb1;
+  background-color: #8962ff;
 }
 
 .card-footer {
-  color: #4f597e;
-  border-color: #faca78 !important;
-  background-color: #faca78 !important;
+  color: #62ffb1;
+  border-color: #8962ff !important;
+  background-color: #8962ff !important;
 }
 
 .card-body > a {
-  color: #4b5161;
+  color: #62ffb1;
 }
 
 div.card-footer > div > a {
-  color: #4b5161;
+  color: #62ffb1;
 }
 
 table {
@@ -74,4 +74,8 @@ a:active {
 .svg-inline--fa {
   color: #47a8f6;
   cursor: pointer;
+}
+
+.card {
+  background-color: transparent !important;
 }
