@@ -12,7 +12,7 @@ image: "drums.webp"
 
 <figure class="figure">
   <video class="mx-auto d-block" width="100%" height="100%" controls autoplay>
-    <source src="/videos/ysmanl.webm" type="video/webm" />
+    <source src="https://drum-videos.s3.ap-southeast-2.amazonaws.com/ysmanl.webm" type="video/webm" />
   </video>
   <figcaption class="figure-caption text-center">AC/DC - You shook me all night long</figcaption>
 </figure>
